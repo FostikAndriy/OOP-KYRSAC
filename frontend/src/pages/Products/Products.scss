@@ -1,0 +1,277 @@
+.products-page {
+
+    h1 {
+
+        margin-bottom: 20px;
+
+        font-size: 32px;
+
+        color: #1e293b;
+    }
+
+    .search-input {
+
+        width: 350px;
+
+        padding: 12px 15px;
+
+        border: 1px solid #dcdcdc;
+
+        border-radius: 8px;
+
+        margin-bottom: 25px;
+
+        font-size: 16px;
+
+        outline: none;
+
+        transition: 0.2s;
+
+        &:focus {
+
+            border-color: #2563eb;
+
+            box-shadow:
+                0 0 0 3px rgba(37, 99, 235, 0.15);
+        }
+    }
+
+    .product-filters {
+
+        display: flex;
+
+        gap: 15px;
+
+        margin-bottom: 25px;
+
+        select {
+
+            padding: 12px 16px;
+
+            border: 1px solid #dcdcdc;
+
+            border-radius: 10px;
+
+            background: white;
+
+            font-size: 15px;
+
+            outline: none;
+
+            cursor: pointer;
+
+            transition: 0.2s;
+
+            &:focus {
+
+                border-color: #2563eb;
+
+                box-shadow:
+                    0 0 0 3px rgba(37, 99, 235, 0.15);
+            }
+        }
+    }
+
+    .product-form {
+
+        background: white;
+
+        padding: 30px;
+
+        border-radius: 16px;
+
+        margin-bottom: 35px;
+
+        box-shadow:
+            0 2px 10px rgba(0, 0, 0, 0.05);
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 25px;
+
+        .form-grid {
+
+            display: grid;
+
+            grid-template-columns: 1fr 1fr;
+
+            gap: 20px;
+        }
+
+        .full-width {
+
+            grid-column: 1 / -1;
+        }
+
+        input,
+        select,
+        textarea {
+
+            width: 100%;
+
+            padding: 14px;
+
+            border: 1px solid #dcdcdc;
+
+            border-radius: 10px;
+
+            font-size: 15px;
+
+            outline: none;
+
+            transition: 0.2s;
+
+            background: #fafafa;
+
+            &:focus {
+
+                border-color: #2563eb;
+
+                background: white;
+
+                box-shadow:
+                    0 0 0 3px rgba(37, 99, 235, 0.15);
+            }
+        }
+
+        textarea {
+
+            min-height: 140px;
+
+            resize: vertical;
+        }
+
+        .submit-btn {
+
+            width: 220px;
+
+            padding: 14px;
+
+            border: none;
+
+            background: #2563eb;
+
+            color: white;
+
+            border-radius: 10px;
+
+            cursor: pointer;
+
+            font-size: 16px;
+
+            font-weight: 600;
+
+            transition: 0.2s;
+
+            &:hover {
+
+                background: #1d4ed8;
+            }
+        }
+    }
+
+    .products-table {
+
+        width: 100%;
+
+        border-collapse: collapse;
+
+        background: white;
+
+        border-radius: 12px;
+
+        overflow: hidden;
+
+        box-shadow:
+            0 2px 10px rgba(0, 0, 0, 0.05);
+
+        th {
+
+            background: #1e293b;
+
+            color: white;
+
+            font-weight: 600;
+        }
+
+        th,
+        td {
+
+            padding: 18px;
+
+            border-bottom: 1px solid #f1f1f1;
+
+            text-align: left;
+        }
+
+        tr {
+
+            transition: 0.2s;
+
+            &:hover {
+
+                background: #f8fafc;
+            }
+        }
+
+        img {
+
+            border-radius: 8px;
+
+            object-fit: cover;
+        }
+
+        .actions {
+
+            display: flex;
+
+            gap: 10px;
+        }
+
+        .edit-btn {
+
+            background: #2563eb;
+
+            color: white;
+
+            border: none;
+
+            padding: 10px 15px;
+
+            border-radius: 6px;
+
+            cursor: pointer;
+
+            transition: 0.2s;
+
+            &:hover {
+
+                background: #1d4ed8;
+            }
+        }
+
+        .delete-btn {
+
+            background: crimson;
+
+            color: white;
+
+            border: none;
+
+            padding: 10px 15px;
+
+            border-radius: 6px;
+
+            cursor: pointer;
+
+            transition: 0.2s;
+
+            &:hover {
+
+                background: #b91c1c;
+            }
+        }
+    }
+}
